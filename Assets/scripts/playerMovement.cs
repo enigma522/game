@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float v;
     public float h;
     private bool isGrounded = true;
+    private bool isNextToBed = false;
     public Transform player;
     private Animator animator;
     public Transform camera;
@@ -90,5 +91,13 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         isGrounded = true;
+        isNextToBed = false;
+        if(collision.gameObject.tag == "bed")
+        {
+            isNextToBed = true;
+        }
+
+
+        Debug.Log(isNextToBed);
     }
 }
