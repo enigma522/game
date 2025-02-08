@@ -58,9 +58,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5063830495864876482}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8802943504205683175}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
       insertIndex: -1
@@ -107,25 +104,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
   m_PrefabInstance: {fileID: 8948882430867219149}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5063830495864876482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8138489384318934940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 225074ae50fcd530898e6c4f8ce83e10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 350
-  jumpForce: 5
-  rb: {fileID: 8802943504205683175}
-  v: 0
-  h: 0
-  player: {fileID: 8915553127188284710}
-  camera: {fileID: 0}
 --- !u!54 &8802943504205683175
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -218,8 +196,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5750481594280307396, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
---- !u!4 &8915553127188284710 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: def44d2a9a2045e198fc43daed6e3e75, type: 3}
-  m_PrefabInstance: {fileID: 8948882430867219149}
-  m_PrefabAsset: {fileID: 0}

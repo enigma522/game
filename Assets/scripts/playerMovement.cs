@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = true;
     public Transform player;
     private Animator animator;
-    public Transform camera;
+    //public Transform camera;
 
     void Start()
     {
@@ -70,10 +70,10 @@ public class PlayerMovement : MonoBehaviour
         }
         
 
-        float cameraYRotation = camera.eulerAngles.y;
-        player.localRotation = Quaternion.Euler(0f, cameraYRotation, 0f);
-
-        movement = camera.TransformDirection(movement);
+        // float cameraYRotation = camera.eulerAngles.y;
+        // player.localRotation = Quaternion.Euler(0f, cameraYRotation, 0f);
+        
+        // movement = movement;
         movement.y = 0; // Prevent movement on the Y-axis
         movement.Normalize(); // Normalize to maintain consistent speed
         movement *= speed * Time.deltaTime;

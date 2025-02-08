@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8852344121704156972
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1244823126912144601, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063830495864876482, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063830495864876482, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138489384318934940, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_Name
+      value: Ch29_nonPBR Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5114384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.4335694
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.505121
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915553127188284710, guid: 923691c9a86155638844c300afa19607, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8138489384318934940, guid: 923691c9a86155638844c300afa19607, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4434439595390921705}
+  m_SourcePrefab: {fileID: 100100000, guid: 923691c9a86155638844c300afa19607, type: 3}
+--- !u!54 &68555003407800011 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 8802943504205683175, guid: 923691c9a86155638844c300afa19607, type: 3}
+  m_PrefabInstance: {fileID: 8852344121704156972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &731941497773985968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8138489384318934940, guid: 923691c9a86155638844c300afa19607, type: 3}
+  m_PrefabInstance: {fileID: 8852344121704156972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4434439595390921705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731941497773985968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16718895f579eca90bff8a3da7b3b16a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rotationSpeed: 720
+  v: 0
+  h: 0
+  rb: {fileID: 68555003407800011}
+  jumpForce: 7
+  cameraTransform: {fileID: 0}
