@@ -50,41 +50,6 @@ public class PlayerMoncef : MonoBehaviour
         movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection;
         movementDirection.Normalize();
 
-        // if (movementDirection != Vector3.zero)
-        // {
-        //     animator.SetBool("moving", true);
-        //     if (v < 0)
-        //     {
-        //         animator.SetBool("movingBackward", true);
-        //     }
-        //     else
-        //     {
-        //         animator.SetBool("movingBackward", false);
-        //     }
-        //     if (h < 0)
-        //     {
-        //         animator.SetBool("movingLeft", true);
-        //         animator.SetBool("movingRight", false);
-        //     }
-        //     else if (h > 0)
-        //     {
-        //         animator.SetBool("movingLeft", false);
-        //         animator.SetBool("movingRight", true);
-        //     }
-        //     else
-        //     {
-        //         animator.SetBool("movingLeft", false);
-        //         animator.SetBool("movingRight", false);
-        //     }
-        // }
-        // else
-        // {
-        //     animator.SetBool("moving", false);
-        //     animator.SetBool("movingLeft", false);
-        //     animator.SetBool("movingRight", false);
-        //     animator.SetBool("movingBackward", false);
-        // }
-
 
 
         transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
@@ -110,13 +75,5 @@ public class PlayerMoncef : MonoBehaviour
     {
         isGrounded = true;
     }
-    System.Collections.IEnumerator PlayGatherAnimation()
-    {
-
-        // Wait for the animation length
-        float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
-        yield return new WaitForSeconds(animationLength);
-
-        // Reset the animation
-    }
+ 
 }
